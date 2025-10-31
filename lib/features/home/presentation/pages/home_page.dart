@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_clean_architecture/core/constants/enums/data_status.dart';
+import 'package:flutter_clean_architecture/core/constants/locale_keys.dart';
 import 'package:flutter_clean_architecture/features/home/presentation/cubit/home_cubit.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,7 +12,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flutter clean architecture"),
+        title: Text(LocaleKeys.hello.tr()),
         backgroundColor: Colors.blueAccent,
       ),
       body: BlocBuilder<HomeCubit, HomeState>(
