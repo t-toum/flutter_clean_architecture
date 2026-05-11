@@ -5,40 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e986180e-939b-4c41-a23a-f64173ec3ee0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/core/DI/register_modules.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/DI/service_locator.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/client/rest_client.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/constants/api_path.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/errors/exceptions.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/errors/failures.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/extension/either_extension.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/routers/app_router.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/usecases/no_params.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/usecases/usecase.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/usecases/usecase_sync.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/core/widgets/not_found_widget.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/datasources/home_local_datasource.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/datasources/home_remote_datasource.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/models/todo_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/repositories/home_repository_impl.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/domain/entities/todo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/domain/repositories/home_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/domain/usecases/get_todo_usecase.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/presentation/cubit/home_cubit.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/presentation/cubit/home_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/presentation/pages/home_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_options.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_options.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvmrc" beforeDir="false" afterPath="$PROJECT_DIR$/.fvmrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter_clean_architecture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_clean_architecture.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Flutter/Flutter-Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/Flutter-Debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Flutter/Flutter-Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/Flutter-Release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,9 +89,11 @@
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
+    "io.flutter.project.isFirstOpen": "true",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "/Users/mac/Documents/GitHub/flutter_clean_architecture",
-    "settings.editor.selected.configurable": "flutter.settings",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/toum/Documents/GitHub/flutter_clean_architecture",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>

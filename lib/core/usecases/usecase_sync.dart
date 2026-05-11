@@ -1,3 +1,3 @@
-abstract class SynchronousUseCase<Type, Params> {
-  Type call(Params params);
+abstract class SynchronousUseCase<Result, Params> {
+  Result call(Params params);
 }

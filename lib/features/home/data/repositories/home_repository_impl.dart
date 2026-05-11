@@ -19,6 +19,8 @@ class HomeRepositoryImpl implements HomeRepository {
       return Right(response);
     } on ServerException catch (error) {
       return Left(ServerFailure(error.message));
+    } catch (_) {
+      return const Left(ServerFailure("Something went wrong"));
     }
   }
 }

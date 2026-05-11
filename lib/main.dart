@@ -1,7 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architecture/core/DI/service_locator.dart';
 import 'package:flutter_clean_architecture/core/services/remote_asset_loader.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'core/routers/app_router.dart';
 
@@ -11,7 +13,10 @@ void main() async {
     EasyLocalization(
       supportedLocales: [Locale('en', 'US'), Locale('lo', 'LA')],
       path: 'https://ezlocalization.s3.ap-southeast-1.amazonaws.com/i18n',
-      assetLoader: const LocaleAssetLoader(),
+      assetLoader: LocaleAssetLoader(
+        dio: getIt<Dio>(),
+        preferences: getIt<SharedPreferences>(),
+      ),
       fallbackLocale: const Locale('en', 'US'),
       child: const MyApp(),
     ),
