@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_clean_architecture/core/client/rest_client.dart';
+import 'package:flutter_clean_architecture/core/network/rest_client.dart';
 import 'package:flutter_clean_architecture/core/services/remote_asset_loader.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';

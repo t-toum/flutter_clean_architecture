@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_architecture/core/client/rest_client.dart';
+import 'package:flutter_clean_architecture/core/network/rest_client.dart';
 import 'package:flutter_clean_architecture/core/errors/exceptions.dart';
 import 'package:flutter_clean_architecture/features/home/data/models/todo_model.dart';
 import 'package:injectable/injectable.dart';

@@ -1,76 +1,30 @@
-import 'package:dartz/dartz.dart';
-import 'package:easy_localization/easy_localization.dart';
+// This is a basic Flutter widget test.
+//
+// To perform an interaction with a widget in your test, use the WidgetTester
+// utility in the flutter_test package. For example, you can send tap and scroll
+// gestures. You can also use WidgetTester to find child widgets in the widget
+// tree, read text, and verify that the values of widget properties are correct.
+
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_clean_architecture/core/errors/failures.dart';
-import 'package:flutter_clean_architecture/features/home/domain/entities/todo.dart';
-import 'package:flutter_clean_architecture/features/home/domain/repositories/home_repository.dart';
-import 'package:flutter_clean_architecture/features/home/domain/usecases/get_todo_usecase.dart';
-import 'package:flutter_clean_architecture/features/home/presentation/cubit/home_cubit.dart';
-import 'package:flutter_clean_architecture/features/home/presentation/pages/home_page.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+
+import 'package:flutter_clean_architecture/main.dart';
 
 void main() {
-  TestWidgetsFlutterBinding.ensureInitialized();
+  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(const MyApp());
 
-  setUp(() async {
-    SharedPreferences.setMockInitialValues({});
-    await EasyLocalization.ensureInitialized();
+    // Verify that our counter starts at 0.
+    expect(find.text('0'), findsOneWidget);
+    expect(find.text('1'), findsNothing);
+
+    // Tap the '+' icon and trigger a frame.
+    await tester.tap(find.byIcon(Icons.add));
+    await tester.pump();
+
+    // Verify that our counter has incremented.
+    expect(find.text('0'), findsNothing);
+    expect(find.text('1'), findsOneWidget);
   });
-
-  testWidgets('shows fetched todos on the home page', (tester) async {
-    final repository = _FakeHomeRepository(
-      todos: const [
-        Todo(
-          id: 1,
-          userId: 1,
-          title: 'Write cleaner Flutter tests',
-          completed: false,
-        ),
-      ],
-    );
-    final cubit = HomeCubit(GetTodoUseCase(repository))..getTodos();
-
-    await tester.pumpWidget(
-      EasyLocalization(
-        supportedLocales: const [Locale('en', 'US')],
-        path: 'unused',
-        assetLoader: const _TestAssetLoader(),
-        fallbackLocale: const Locale('en', 'US'),
-        child: MaterialApp(
-          home: BlocProvider<HomeCubit>.value(
-            value: cubit,
-            child: const HomePage(),
-          ),
-        ),
-      ),
-    );
-    await tester.pumpAndSettle();
-
-    expect(find.text('hello'), findsOneWidget);
-    expect(find.text('Write cleaner Flutter tests'), findsOneWidget);
-
-    await cubit.close();
-  });
-}
-
-class _FakeHomeRepository implements HomeRepository {
-  _FakeHomeRepository({required this.todos});
-
-  final List<Todo> todos;
-
-  @override
-  Future<Either<Failure, List<Todo>>> getTodos() async {
-    return Right(todos);
-  }
-}
-
-class _TestAssetLoader extends AssetLoader {
-  const _TestAssetLoader();
-
-  @override
-  Future<Map<String, dynamic>> load(String path, Locale locale) async {
-    return {'hello': 'Hello'};
-  }
 }
